@@ -29,10 +29,6 @@ Este proyecto es un conversor de monedas desarrollado en Java como parte de mi a
    - Abre el proyecto en tu IDE favorito.
    - Ejecuta la clase `Principal`.
 
-## Capturas de pantalla
-
-> Puedes añadir capturas de tu aplicación funcionando aquí.
-
 
 ## Futuras mejoras
 
