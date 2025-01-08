@@ -38,6 +38,6 @@ Este proyecto es un conversor de monedas desarrollado en Java como parte de mi a
 
 ## Autor
 
-**JoReg**
+**Jorge Regalado**
 - GitHub: https://github.com/Rico1705
 - LinkedIn: https://www.linkedin.com/in/jorge-regalado-23ba9699/
