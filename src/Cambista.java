@@ -1,4 +1,5 @@
 public class Cambista {
+
     private double tasaARS;
     private double tasaBOB;
     private double tasaBRL;
@@ -6,59 +7,27 @@ public class Cambista {
     private double tasaCOP;
     private double tasaUSD;
 
-    //Métodos para establecer las tasas(set)
+    // Getters y Setters para cada tasa
+    public double getTasaARS() { return tasaARS; }
+    public void setTasaARS(double tasaARS) { this.tasaARS = tasaARS; }
 
-    public void setTasaARS(double valor){
-        this.tasaARS = valor;
-    }
+    public double getTasaBOB() { return tasaBOB; }
+    public void setTasaBOB(double tasaBOB) { this.tasaBOB = tasaBOB; }
 
-    public void setTasaBOB(double valor){
-        this.tasaBOB = valor;
-    }
+    public double getTasaBRL() { return tasaBRL; }
+    public void setTasaBRL(double tasaBRL) { this.tasaBRL = tasaBRL; }
 
-    public void setTasaBRL(double valor){
-        this.tasaBRL = valor;
-    }
+    public double getTasaCLP() { return tasaCLP; }
+    public void setTasaCLP(double tasaCLP) { this.tasaCLP = tasaCLP; }
 
-    public void setTasaCLP(double valor){
-        this.tasaCLP = valor;
-    }
+    public double getTasaCOP() { return tasaCOP; }
+    public void setTasaCOP(double tasaCOP) { this.tasaCOP = tasaCOP; }
 
-    public void setTasaCOP(double valor){
-        this.tasaCOP = valor;
-    }
+    public double getTasaUSD() { return tasaUSD; }
+    public void setTasaUSD(double tasaUSD) { this.tasaUSD = tasaUSD; }
 
-    public void setTasaUSD(double valor){
-        this.tasaUSD = valor;
-    }
-
-    // Métodos para obtener las tasas(get)
-
-    public double getTasaARS(){
-        return this.tasaARS;
-    }
-
-    public double getTasaBOB(){
-        return this.tasaBOB;
-    }
-
-    public double getTasaBRL() {
-        return this.tasaBRL;
-    }
-
-    public double getTasaCLP() {
-        return this.tasaCLP;
-    }
-
-    public double getTasaCOP() {
-        return this.tasaCOP;
-    }
-
-    public double getTasaUSD() {
-        return this.tasaUSD;
-    }
-    // Métodos para convertir moneda
-    public double convertirMoneda(double cantidad, double tasaBase, double tasaDestino){
-        return (cantidad*tasaDestino) / tasaBase;
+    // Método para convertir monedas
+    public double convertirMoneda(double cantidad, double tasaBase, double tasaDestino) {
+        return cantidad * (tasaDestino / tasaBase);
     }
 }
